@@ -1,5 +1,7 @@
 # Autocaption
 
+**This is a product of vibe coding. Use at your own risk!**
+
 实时系统音频转录桌面应用程序。捕获系统音频输出，执行低延迟语音识别，并通过 WebSocket 提供字幕。
 
 ## 功能特性
@@ -281,3 +283,5 @@ MIT License - 详见 LICENSE 文件
 
 - [whisper.cpp](https://github.com/ggerganov/whisper.cpp) - 高效的语音识别引擎
 - [Tauri](https://tauri.app) - 轻量级桌面应用框架
+- [Kimi Code](https://www.kimi.com/code) - 作者(?)
+- [抹茶紅豆](https://www.matchaazukii.com/) - 把作品上傳的人類
