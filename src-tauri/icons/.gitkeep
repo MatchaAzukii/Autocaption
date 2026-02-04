@@ -1,0 +1,8 @@
+# Place your icons here:
+# - icon.png (256x256 or larger for Linux)
+# - icon.icns (macOS)
+# - icon.ico (Windows)
+# 
+# You can generate these from a single PNG using:
+# cargo install tauri-cli
+# cargo tauri icon /path/to/source.png

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocaption - Real-time Captions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Overlay Mode -->
+        <div id="overlay-mode" class="hidden">
+            <div id="captions-container">
+                <div id="current-caption"></div>
+            </div>
+            <div id="overlay-controls">
+                <button id="toggle-settings" title="Settings">⚙️</button>
+                <button id="exit-overlay" title="Exit Overlay">✕</button>
+            </div>
+        </div>
+
+        <!-- Dashboard Mode -->
+        <div id="dashboard-mode">
+            <header>
+                <h1>🎤 Autocaption</h1>
+                <div id="connection-status" class="disconnected">Disconnected</div>
+            </header>
+
+            <main>
+                <section id="live-preview">
+                    <h2>Live Preview</h2>
+                    <div id="preview-box">
+                        <div id="live-caption">Waiting for captions...</div>
+                    </div>
+                </section>
+
+                <section id="caption-history">
+                    <h2>Caption History</h2>
+                    <div id="history-list"></div>
+                </section>
+
+                <section id="settings">
+                    <h2>Settings</h2>
+                    <div class="setting-group">
+                        <label>WebSocket URL:</label>
+                        <input type="text" id="ws-url" value="ws://localhost:8765">
+                        <button id="connect-btn">Connect</button>
+                    </div>
+                    <div class="setting-group">
+                        <label>Font Size:</label>
+                        <input type="range" id="font-size" min="12" max="72" value="24">
+                        <span id="font-size-value">24px</span>
+                    </div>
+                    <div class="setting-group">
+                        <label>Caption Position:</label>
+                        <select id="caption-position">
+                            <option value="bottom">Bottom</option>
+                            <option value="top">Top</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </div>
+                    <div class="setting-group">
+                        <label>Text Color:</label>
+                        <input type="color" id="text-color" value="#ffffff">
+                    </div>
+                    <div class="setting-group">
+                        <label>Background:</label>
+                        <input type="color" id="bg-color" value="#000000">
+                        <input type="range" id="bg-opacity" min="0" max="100" value="80">
+                    </div>
+                    <div class="setting-group">
+                        <button id="enter-overlay">Enter Overlay Mode</button>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>Autocaption v0.1.0 - Real-time Speech-to-Text</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
