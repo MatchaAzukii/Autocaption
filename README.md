@@ -1,6 +1,6 @@
 # Autocaption
 
-**This is a product of vibe coding. Use at your own risk!**
+**This is a product of vibe coding (AI Slop). Use at your own risk!**
 
 实时系统音频转录桌面应用程序。捕获系统音频输出，执行低延迟语音识别，并通过 WebSocket 提供字幕。
 
